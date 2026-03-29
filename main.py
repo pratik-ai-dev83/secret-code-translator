@@ -1,57 +1,50 @@
 import random
-import string 
+import string
 
 def get_random():
-   letters = string.ascii_lowercase0
-   return "".join(random.choice(letters) for _ in range(3))
+    letters = string.ascii_lowercase
+    s = ""
+    for i in range(3):
+        s = s + random.choice(letters)
+    return s
 
 
 print("secret code tool")
-print("____________________")
+print("---------------")
 
+msg = input("enter your message: ")
+choice = input("1 for coding, 0 for decoding: ")
 
-msg = input("Enter your massage")
-choice = input ("Press 1 for coding or 0 for Decoding")
+words = msg.split(" ")
+final = []
 
-words = msg.split()
+if choice == "1":
+    for word in words:
+        if len(word) < 3:
+            final.append(word[::-1])
+        else:
+            r1 = get_random()
+            r2 = get_random()
 
-result = []
+            new = r1 + word[1:] + word[0] + r2
+            final.append(new)
 
-if choice == "1"
-    for W in words:
-      if len(W) >= 3:
-         start = get_random()
-         end = get _random()
-              
-         new_word = start + W[1:] + end
-         result.append(w[::-1]) 
-   else:
-         result.append(w[::-1])
+    print("encoded:")
+    print(" ".join(final))
 
- print("\nEncoded Massage:")
- print(" ".join(result))
 
 elif choice == "0":
-    for w in word:
-        if len(w) >= 3:
+    for word in words:
+        if len(word) < 3:
+            final.append(word[::-1])
+        else:
+            cut = word[3:-3]
+            original = cut[-1] + cut[:-1]
+            final.append(original)
 
-          temp = w [3:-3]
-
-           original = temp[-1] + temp[:-1]
-           result.append(original)
-else:
-      result.appen(w[::-1])
-
-
-   print("\nDecoded Message")
-   print(" ".join(result))
-  
+    print("decoded:")
+    print(" ".join(final))
 
 
 else:
-   print("Invalid input! Please enter 1 or 0.")
-
-
-
-
- 
+    print("wrong input")
