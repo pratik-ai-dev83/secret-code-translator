@@ -1,4 +1,4 @@
-# Secret Code Translator
+# SECERT CODE TRANSLATOR
 
 A fun Python project that converts normal text into a secret coded message and can also decode it back to the original text.
 
@@ -6,7 +6,7 @@ This project is great for beginners to understand string manipulation, loops, an
 
 ---
 
-## Features
+## FEATURES
 
 * Encode normal message into secret code
 * Decode secret code back to original message
@@ -16,13 +16,13 @@ This project is great for beginners to understand string manipulation, loops, an
 
 ---
 
-## Tech Stack
+## TECH STACK
 
 * Python
 
 ---
 
-## Project Structure
+## PROJECT STRUCTURE
 
 ```
 secret-code-translator/
@@ -32,7 +32,7 @@ secret-code-translator/
 
 ---
 
-## How It Works
+## HOW IT WORKS
 
 1. User enters a message
 2. Choose:
@@ -44,7 +44,7 @@ secret-code-translator/
 
 ---
 
-## Usage
+## USAGE
 
 Run the program:
 
@@ -63,7 +63,7 @@ Output: (secret coded message)
 
 ---
 
-## Future Improvements
+## FUTUER IMPROVEMENT
 
 * Add GUI interface
 * Add different encoding styles
@@ -73,18 +73,18 @@ Output: (secret coded message)
 
 ---
 
-## Contributing
+## CONTRIBUTING
 
 Feel free to fork this repository and improve the logic or add new features.
 
 ---
 
-## License
+## LICENS
 
 This project is open-source and free to use.
 
 ---
 
-## Author
+## AUTHOR
 
 Made with ❤️ by Pratik Patil
