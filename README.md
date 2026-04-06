@@ -88,3 +88,4 @@ This project is open-source and free to use.
 ## AUTHOR
 
 Made with ❤️ by Pratik Patil
+Thank You!!
